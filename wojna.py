@@ -156,10 +156,14 @@ if __name__ == '__main__':
     # how many times repeat that
     m = 1
     end = 0
+    # min no. of players
+    min_players = 2
+    # max no. of players
+    max_players = 17
     # number of players
     n_players = int(input('Podaj liczbę graczy: '))
-    while (n_players < 2) or (n_players > 17):
-        n_players = int(input('Podałeś złą liczbę. Liczba graczy musi być pomiędzy 2 a 17: '))
+    while (n_players < min_players) or (n_players > max_players):
+        n_players = int(input(f'Podałeś złą liczbę. Liczba graczy musi być pomiędzy {min_players} a {max_players}: '))
     for j in range(m):
         # define colors and numbers in cards, create and mix them
         colors = ['Kier', 'Karo', 'Trefl', 'Pik']
