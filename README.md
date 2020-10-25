@@ -7,6 +7,6 @@
  
 task list:
 
-[x] done
+-[x] done
 
-[] to do
+-[] to do
