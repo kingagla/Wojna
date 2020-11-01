@@ -154,7 +154,7 @@ if __name__ == '__main__':
     # how many round with no winner to stop game
     n = 10000
     # how many times repeat that
-    m = 1
+    m = int(input('Ile razy chcesz powtórzyć rozgrywke? '))
     end = 0
     # min no. of players
     min_players = 2
