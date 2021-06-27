@@ -149,7 +149,7 @@ def one_round(game, players, war):
         return winner, cards_to_take, players, game
 
 
-if __name__ == '__main__':
+def main():
     # how many round with no winner to stop game
     n = 10000
     # how many times repeat that
@@ -190,3 +190,8 @@ if __name__ == '__main__':
             end += 1
 
     print('Grę skończyli', end, 'razy na', m)
+
+
+if __name__ == '__main__':
+    main()
+
