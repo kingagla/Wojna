@@ -1,4 +1,5 @@
 import numpy as np
+import itertools
 
 # # define strength of cards
 strength = {f'{i}': i for i in range(1, 11)}
@@ -12,10 +13,8 @@ strength['As'] = 14
 def mix_cards(colors, numbers):
     # Create all pack
     allCards = []
-    for col in colors:
-        for num in numbers:
-            allCards.append(num + ' ' + col)
-
+    for col, num in itertools.product(colors, numbers):
+        allCards.append(num + ' ' + col)
     # shuffled cards
     np.random.shuffle(allCards)
     return allCards
